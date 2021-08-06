@@ -29,6 +29,7 @@ public class DatabaseManager {
         val use= section.getBoolean("Use");
 
         if (!use) {
+            Bukkit.getConsoleSender().sendMessage("§e[mttCash] MySQL Desabilitado. Habilitando SQLite...");
             dataSource = new SQLite();
         } else {
 

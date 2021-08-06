@@ -5,6 +5,7 @@ import lombok.Setter;
 import lombok.val;
 import me.matt.mttcashv2.database.datasource.DataSource;
 import me.matt.mttcashv2.model.User;
+import org.bukkit.Bukkit;
 
 import java.sql.*;
 
@@ -36,8 +37,9 @@ public class MySQL implements DataSource {
     @Override
     public void closeConnection() {
         try {
-            if (getConnection() != null | !getConnection().isClosed()) {
+            if (getConnection() != null || !getConnection().isClosed()) {
                 getConnection().close();
+                Bukkit.getConsoleSender().sendMessage("§e[mttCash] Conexão com MySQL fechada com sucesso.");
             }
         } catch (SQLException exception) {
             exception.printStackTrace();

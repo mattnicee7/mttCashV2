@@ -1,6 +1,7 @@
 package me.matt.mttcashv2;
 
 import me.matt.mttcashv2.commands.CashCommand;
+import me.matt.mttcashv2.database.datasource.impl.MySQL;
 import me.matt.mttcashv2.database.manager.DatabaseManager;
 import me.matt.mttcashv2.listener.PlayerJoin;
 import me.matt.mttcashv2.manager.MessageManager;
@@ -44,6 +45,9 @@ public final class Main extends JavaPlugin {
 
     public void closeConnection() {
         DatabaseManager.getInstance().getDataSource().closeConnection();
+
+
+
         cs.sendMessage("§e[mttCash] Conexão com  fechada com sucesso.");
     }
 

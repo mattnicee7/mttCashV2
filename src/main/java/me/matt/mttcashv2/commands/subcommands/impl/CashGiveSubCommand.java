@@ -69,8 +69,8 @@ public class CashGiveSubCommand implements SubCommand {
             val player = (Player) sender;
 
             target.sendMessage(MessageManager.getSimpleMessage("YouReceived")
-            .replace("{cash}", String.format("%.2f", amount)
-            .replace("{player}", player.getName())));
+            .replace("{cash}", String.format("%.2f", amount))
+            .replace("{player}", player.getName()));
         }
 
         return false;

@@ -10,9 +10,11 @@ YouGived: '&aVocê deu &e{cash} &apara o jogador &e{player}.'
 YouReceived: '&aVocê recebeu &e{cash} &ado jogador &c{player}.'
 SettedWithSuccess: '&aVocê setou &e{cash} &apara o jogador &e{player}.'
 IsNotValidNumber: '&cVocê deve digitar um número válido.'
+TargetDontHave: '&cEsse jogador não tem essa quantia de cash.'
 
 Sended: '&aVocê enviou &e{cash} &ade cash para o jogador &e{player}.'
 Received: '&aVocê recebeu &e{cash} &ade cash do jogador &e{player}.'
+Removed: '&aVocê removeu {cash} &ade cash do jogador &e{player}.'
 CashSee: '&aO seu saldo é de: &e{cash}&a.'
 CashSeeOther: '&aO saldo de &e{player} &aé de: &e{cash}&a.'
 
@@ -29,3 +31,4 @@ HelpAdminCommand:
   - '&e/cash enviar <nick> <quantia>.'
   - '&e/cash give <nick> <quantia>.'
   - '&e/cash set <nick> <quantia>.'
+  - '&e/cash remove <nick> <quantia>.'

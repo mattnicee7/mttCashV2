@@ -32,6 +32,8 @@ public class MessageManager {
         simpleMessages.put("IncorrectGiveSubCommand", messages.getString("IncorrectGiveSubCommand"));
         simpleMessages.put("YouGived", messages.getString("YouGived"));
         simpleMessages.put("YouReceived", messages.getString("YouReceived"));
+        simpleMessages.put("Removed", messages.getString("Removed"));
+        simpleMessages.put("TargetDontHave", messages.getString("TargetDontHave"));
     }
 
     public static void loadMultiMessages() {

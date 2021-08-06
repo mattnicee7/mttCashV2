@@ -27,6 +27,7 @@ public class CashCommand implements CommandExecutor {
         subCommands.add(new CashGiveSubCommand());
         subCommands.add(new CashSetSubCommand());
         subCommands.add(new CashSeeSubCommand());
+        subCommands.add(new CashRemoveSubCommand());
         main.getCommand("cash").setExecutor(this);
     }
 
@@ -34,8 +35,10 @@ public class CashCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
-        if (sender instanceof Player && args.length == 0) Bukkit.dispatchCommand(sender, "cash see");
-
+        if (sender instanceof Player && args.length == 0) {
+            Bukkit.dispatchCommand(sender, "cash see");
+            return false;
+        }
 
         if (args.length >= 1) {
 

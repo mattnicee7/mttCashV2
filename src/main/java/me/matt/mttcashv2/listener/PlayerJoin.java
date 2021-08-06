@@ -24,7 +24,7 @@ public class PlayerJoin implements Listener {
 
 
         if (!DatabaseManager.getInstance().getUsers().has(playerName)) {
-            DatabaseManager.getInstance().getUsers().insert(new User(playerName, 100.0));
+            DatabaseManager.getInstance().getUsers().insert(new User(playerName, 0.0));
         }
     }
 }
