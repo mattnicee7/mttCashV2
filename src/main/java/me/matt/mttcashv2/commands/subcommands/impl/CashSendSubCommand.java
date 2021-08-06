@@ -5,6 +5,7 @@ import me.matt.mttcashv2.commands.subcommands.SubCommand;
 import me.matt.mttcashv2.database.manager.DatabaseManager;
 import me.matt.mttcashv2.manager.MessageManager;
 import me.matt.mttcashv2.model.User;
+import me.matt.mttcashv2.util.Methods;
 import org.apache.commons.lang.StringUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
@@ -48,7 +49,9 @@ public class CashSendSubCommand implements SubCommand {
             return false;
         } else {
 
-            if (!StringUtils.isNumeric(args[2])) {
+            StringUtils.isNumeric("sim");
+
+            if (!Methods.isNumeric(args[2])) {
                 sender.sendMessage(MessageManager.getSimpleMessage("IsNotValidNumber"));
                 return false;
             }
