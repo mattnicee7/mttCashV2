@@ -29,6 +29,9 @@ public class MessageManager {
         simpleMessages.put("Received", messages.getString("Received"));
         simpleMessages.put("SettedWithSuccess", messages.getString("SettedWithSuccess"));
         simpleMessages.put("CashToYou", messages.getString("CashToYou"));
+        simpleMessages.put("IncorrectGiveSubCommand", messages.getString("IncorrectGiveSubCommand"));
+        simpleMessages.put("YouGived", messages.getString("YouGived"));
+        simpleMessages.put("YouReceived", messages.getString("YouReceived"));
     }
 
     public static void loadMultiMessages() {
