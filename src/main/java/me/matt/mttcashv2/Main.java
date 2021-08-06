@@ -5,6 +5,7 @@ import me.matt.mttcashv2.database.datasource.impl.MySQL;
 import me.matt.mttcashv2.database.manager.DatabaseManager;
 import me.matt.mttcashv2.listener.PlayerJoin;
 import me.matt.mttcashv2.manager.MessageManager;
+import me.matt.mttcashv2.placeholder.PlaceholderRegistry;
 import org.bukkit.Bukkit;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -15,17 +16,20 @@ public final class Main extends JavaPlugin {
 
     private static Optional<Main> instance;
 
+    PlaceholderRegistry placeholderRegistry = new PlaceholderRegistry();
     ConsoleCommandSender cs = Bukkit.getConsoleSender();
 
     @Override
     public void onEnable() {
         instance = Optional.of(this);
         loadConfigs();
+
         openConnection();
+        placeholderRegistry.register();
 
         registerCommands();
         registerEvents();
-
+        cs.sendMessage("§e[mttCash] Plugin iniciado com sucesso!");
     }
 
     @Override
