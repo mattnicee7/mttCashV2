@@ -1,0 +1,7 @@
+MySQL:
+  Use: false
+  Name: "matt"
+  Host: "localhost"
+  Port: 3306
+  Database: "testecash"
+  Password: "123123"

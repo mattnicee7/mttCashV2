@@ -1,0 +1,28 @@
+NoConsole: '&cEsse comando é apenas para players.'
+Offline: '&cJogador inexistente no banco de dados ou offline.'
+
+YouDontHaveCash: '&cVocê não tem cash suficiente.'
+CashToYou: '&cVocê não pode enviar cash para si mesmo.'
+IncorrectSendSubCommand: '&cUso incorreto. Use: /cash enviar <nick> <quantia>'
+IncorrectSetSubCommand: '&cUso incorreto. Use: /cash set <nick> <quantia>'
+SettedWithSuccess: '&aVocê setou &e{cash} &apara o jogador &e{player}.'
+IsNotValidNumber: '&cVocê deve digitar um número válido.'
+
+Sended: '&aVocê enviou &e{cash} &ade cash para o jogador &e{player}.'
+Received: '&aVocê recebeu &e{cash} &ade cash do jogador &e{player}.'
+CashSee: '&aO seu saldo é de: &e{cash}&a.'
+CashSeeOther: '&aO saldo de &e{player} &aé de: &e{cash}&a.'
+
+HelpCommand:
+  - '&emttCash - Lista de comandos'
+  - ''
+  - '&e/cash ver <player>'
+  - '&e/cash enviar <nick> <quantia>'
+
+HelpAdminCommand:
+  - '&cmttCash - Lista de comandos adm'
+  - ''
+  - '&e/cash ver <player>'
+  - '&e/cash enviar <nick> <quantia>.'
+  - '&e/cash give <nick> <quantia>.'
+  - '&e/cash set <nick> <quantia>.'

@@ -1,0 +1,7 @@
+name: MttCashV2
+version: @version@
+main: me.matt.mttcashv2.Main
+authors: [ mattnicee7 ]
+website: github.com/mattnicee7
+commands:
+  cash:
