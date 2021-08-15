@@ -1,12 +1,13 @@
 package me.matt.mttcashv2.util;
 
+import lombok.var;
+
 public class Methods {
 
     public static boolean isNumeric(String number) {
-        if (number.equalsIgnoreCase("nan") || number.equalsIgnoreCase("infinity")) return false;
         try {
-            Double.parseDouble(number);
-            return true;
+            var n = Double.parseDouble(number);
+            return !Double.isNaN(n) && !Double.isInfinite(n);
         } catch (NumberFormatException exception) {
             return false;
         }

@@ -47,8 +47,9 @@ public class CashCommand implements CommandExecutor {
             if (target != null) {
                 val targetUser = DatabaseManager.getInstance().getUsers().getUser(target.getName());
                 sender.sendMessage(MessageManager.getSimpleMessage("CashSeeOther")
-                .replace("{player}", target.getName())
-                .replace("{cash}", String.format("%.2f", targetUser.getBalance())));
+                        .replace("{player}", target.getName())
+                        .replace("{cash}", String.format("%.2f", targetUser.getBalance())));
+                return false;
             }
 
             for (SubCommand subCommand : subCommands) {

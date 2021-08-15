@@ -5,3 +5,5 @@ MySQL:
   Port: 3306
   Database: "testecash"
   Password: "123123"
+
+StartCash: 0
